@@ -12,9 +12,12 @@ public class Item
     public string Descrption;
     public float Value;
     public Color tint = Color.white;
-    public Sprite Icon;
+    public string IconName;
 
     public GameObject prefab;
-         
-    
+
+
+    [NonSerialized] //wont be save 
+    public Sprite Icon;
+
 }
