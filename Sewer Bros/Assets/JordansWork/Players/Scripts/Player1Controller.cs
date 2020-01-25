@@ -17,8 +17,8 @@ public class Player1Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        horizontal = Input.GetAxis("WASDH") * speed * Time.deltaTime;
+        vertical = Input.GetAxis("WASDV") * speed * Time.deltaTime;
 
         transform.Translate(new Vector3(horizontal, 0, vertical));
     }
