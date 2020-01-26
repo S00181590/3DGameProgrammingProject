@@ -11,10 +11,10 @@ namespace GameChat.Models
     public class Player
     {
         [Key]
-        public int ID { get; set; }
-
         [MaxLength(30), MinLength(2)]
         public String UserName { get; set; } //navgtion property 
+
+
         public ICollection<PlayerMessage> sentMessages { get; set; }
     }
 
@@ -24,7 +24,7 @@ namespace GameChat.Models
         public int ID { get; set; }
 
         [ForeignKey("Player")]
-        public int PlayersID { get; set; }
+        public string PlayersUsername { get; set; }
 
         public Player Player { get; set; }
 
@@ -50,6 +50,5 @@ namespace GameChat.Models
 
         }
     }
-
 
 }

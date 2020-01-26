@@ -8,10 +8,13 @@ public class Player1Controller : MonoBehaviour
 
     float horizontal, vertical;
 
+    public bool CanHit, CanCarry;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        CanHit = false;
+        CanCarry = false;
     }
 
     // Update is called once per frame
@@ -21,5 +24,10 @@ public class Player1Controller : MonoBehaviour
         vertical = Input.GetAxis("WASDV") * speed * Time.deltaTime;
 
         transform.Translate(new Vector3(horizontal, 0, vertical));
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
     }
 }

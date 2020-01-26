@@ -8,6 +8,9 @@ TagManager:
   - Player2
   - Player1Cam
   - Player2Cam
+  - GateLock
+  - Valve
+  - Gate
   layers:
   - Default
   - TransparentFX

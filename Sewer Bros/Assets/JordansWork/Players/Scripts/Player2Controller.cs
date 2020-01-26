@@ -8,18 +8,49 @@ public class Player2Controller : MonoBehaviour
 
     float horizontal, vertical;
 
+    public bool wantsCarry, pickup;
+
+    public GameObject trigger;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        wantsCarry = false;
+        pickup = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("ArrowH") * speed * Time.deltaTime;
-        vertical = Input.GetAxis("ArrowV") * speed * Time.deltaTime;
+        if(wantsCarry)
+        {
+            trigger.SetActive(true);
 
-        transform.Translate(new Vector3(horizontal, 0, vertical));
+            if (Input.GetKeyDown(KeyCode.Insert))
+            {
+                wantsCarry = !wantsCarry;
+                trigger.SetActive(false);
+            }
+        }
+        else if(pickup)
+        {
+            horizontal = Input.GetAxis("ArrowH") * speed * Time.deltaTime;
+            vertical = Input.GetAxis("ArrowV") * speed * Time.deltaTime;
+
+            transform.Translate(new Vector3(horizontal, 0, vertical));
+        }
+        else
+        {
+            horizontal = Input.GetAxis("ArrowH") * speed * Time.deltaTime;
+            vertical = Input.GetAxis("ArrowV") * speed * Time.deltaTime;
+
+            transform.Translate(new Vector3(horizontal, 0, vertical));
+
+            if(Input.GetKeyDown(KeyCode.Insert))
+            {
+                wantsCarry = !wantsCarry;
+            }
+        }
+        
     }
 }
