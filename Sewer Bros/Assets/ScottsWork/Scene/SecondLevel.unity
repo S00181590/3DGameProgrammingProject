@@ -5882,12 +5882,12 @@ PrefabInstance:
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -883
+      value: 141
       objectReference: {fileID: 0}
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 611
+      value: -157
       objectReference: {fileID: 0}
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
@@ -5897,27 +5897,27 @@ PrefabInstance:
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 446.8
+      value: 446.80005
       objectReference: {fileID: 0}
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
-        type: 3}
-      propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
-      propertyPath: m_AnchorMax.y
+      propertyPath: m_AnchorMax.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224557507856393178, guid: 967719806569f24408f2d6e77da64f35,
         type: 3}
@@ -9338,12 +9338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fe8ff3620fcd3408c554dcd8a5ed73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
-  players: []
-  speed: 6
-  jumpheight: 6
-  gravity: 10
-  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!1 &1491291954
 GameObject:
   m_ObjectHideFlags: 0
