@@ -49,6 +49,31 @@ public class PauseMenu : MonoBehaviour
             Options.SetActive(false);
             Time.timeScale = 1f;
         }
+
+
+
+
+        //if (IsPaused)
+        //{
+        //    Instantiate(pauseMenu, transform);
+        //    pauseMenu.SetActive(true);
+        //    Time.timeScale = 0f;
+        //}
+        //if  (!IsPaused)
+        //{
+        //    pauseMenu.SetActive(false);
+        //    Time.timeScale = 1f;
+        //}
+        //if (OptionsOpen)
+        //{
+        //    Options.SetActive(true);
+        //    Time.timeScale = 0f;
+        //}
+        //else if   (!OptionsOpen)
+        //{
+        //    Options.SetActive(false);
+        //    Time.timeScale = 1f;
+        //}
     }
 
     public void ResumeTheGame()
