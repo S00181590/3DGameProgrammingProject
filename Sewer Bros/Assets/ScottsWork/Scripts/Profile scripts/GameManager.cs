@@ -43,11 +43,11 @@ public class GameManager : MonoBehaviour
 
         CreateRequiredDirectories();
 
-        //Profile = new UserProfile()
-        //{
-        //    Username = "Scott Gallagher"
-        //};
-        // GameManager.SaveUserProfile(Profile);
+        Profile = new UserProfile()
+        {
+            Username = "Scott Gallagher"
+        };
+        GameManager.SaveUserProfile(Profile);
         Profile = GameManager.LoadUserProfiles("Scott Gallagher");
     }
        

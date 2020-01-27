@@ -20,16 +20,20 @@ public class Gate : MonoBehaviour
     {
         if(IsOpen)
         {
-            transform.Translate(
+            transform.position =
                 new Vector3(
                     transform.position.x, 
-                    transform.position.y + 5f, 
-                    transform.position.z));
+                    15f, 
+                    transform.position.z);
 
         }
         else
         {
-            transform.Translate(startPosition);
+            if(transform.position != startPosition)
+            {
+                transform.position = startPosition;
+            }
+            
         }
     }
 }

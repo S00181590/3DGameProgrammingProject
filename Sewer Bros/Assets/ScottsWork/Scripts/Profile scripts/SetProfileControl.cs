@@ -7,7 +7,7 @@ public class SetProfileControl : MonoBehaviour
 
     public GameObject ProfileDisplayButton;
     public RectTransform ListProfiles;
-    // Start is called before the first frame update
+   
     void Start()
     {
         LoadProfilesList();
